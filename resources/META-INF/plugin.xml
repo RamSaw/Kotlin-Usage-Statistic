@@ -2,16 +2,15 @@
   <id>com.your.company.unique.plugin.id</id>
   <name>Plugin display name here</name>
   <version>1.0</version>
-  <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
+  <vendor email="prav.mischa@gmail.com" url="">Mikhail Pravilov</vendor>
 
   <description><![CDATA[
-      Enter short description for your plugin here.<br>
-      <em>most HTML tags may be used</em>
+      Plugin gathers information about Kotlin files in source and test source files of current project(currently the last opened project)
+      and then shows percentage of Kotlin files.
     ]]></description>
 
   <change-notes><![CDATA[
-      Add change notes here.<br>
-      <em>most HTML tags may be used</em>
+      Make tool windows active for all opened windows.
     ]]>
   </change-notes>
 
@@ -20,12 +19,10 @@
 
   <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
        on how to target different products -->
-  <!-- uncomment to enable plugin in all products
   <depends>com.intellij.modules.lang</depends>
-  -->
 
   <extensions defaultExtensionNs="com.intellij">
-    <!-- Add your extensions here -->
+    <toolWindow id="Kotlin Usage Statistic" secondary="true" anchor="right" factoryClass="com.mikhail.pravilov.mit.KotlinUsageStatistic" />
   </extensions>
 
   <actions>
