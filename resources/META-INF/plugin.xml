@@ -1,6 +1,6 @@
 <idea-plugin>
-  <id>com.your.company.unique.plugin.id</id>
-  <name>Plugin display name here</name>
+  <id>com.mikhail.pravilov.mit.KotlinUsageStatistic</id>
+  <name>Kotlin Usage Statistic</name>
   <version>1.0</version>
   <vendor email="prav.mischa@gmail.com" url="">Mikhail Pravilov</vendor>
 
